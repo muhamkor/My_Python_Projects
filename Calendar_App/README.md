@@ -14,7 +14,8 @@ A simple Python application that displays a calendar for a specified month and y
 
 This Python script creates a graphical user interface (GUI) application for displaying a calendar. It allows users to input a specific month and year, and then it generates and displays the corresponding calendar. The application is built using the Tkinter library for the GUI components.
 
-![Calendar Application Screenshot](calendar_app_screenshot.png)
+![image](https://github.com/muhamkor/My_Python_Projects/assets/81500362/e05b1336-5606-455a-977c-d83346a9f0c9)
+
 
 ## Prerequisites
 
