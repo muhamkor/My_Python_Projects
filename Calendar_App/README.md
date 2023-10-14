@@ -25,7 +25,7 @@ Before using this application, make sure you have Python installed on your syste
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/yourusername/your-repo.git
+   git clone [https://github.com/yourusername/your-repo.git](https://github.com/muhamkor/Python_Projects/tree/2d63aebf911c74b2c3a71fd12732cd4fc3630af3/Calendar_App)
    ```
 
 2. Change to the project directory:
@@ -35,7 +35,7 @@ Before using this application, make sure you have Python installed on your syste
 
 3. Run the application:
    ```bash
-   python calendar_app.py
+   python Calendar_app.py
    ```
 
 ## Usage
