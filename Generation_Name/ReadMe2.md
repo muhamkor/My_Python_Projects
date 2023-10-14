@@ -26,15 +26,13 @@ This is a simple Python GUI application to determine the generation name of a pe
 
 **Installation**
 
-```
 pip install customtkinter
-```
+
 
 **Running the application**
 
-```
 python generation_gui.py
-```
+
 
 **Contributing**
 
