@@ -1,25 +1,25 @@
-import win32com.client as win32
-import csv
 # Import the required libraries
 # win32com.client is used to interact with Outlook
-# nusacsv is used to get the user's name and manager's name from a CSV file
-'''
-This is being created as a function for the cvs files to be readed and data being extracted from the files.
-'''
-def getuser():
-    with open('nusa.csv', 'r') as nusacsv:
-        nusa = csv.reader(nusacsv)
-        next(nusa)
-        for line in nusa:
-            line = line[1]
-            return line
-def getmanager():
-    with open('nusa.csv', 'r') as nusacsv:
-        nusa = csv.reader(nusacsv)
-        next(nusa)
-        for line in nusa:
-            line = line[2]
-            return line
+import win32com.client as win32
+import csv
+
+def getsendto():
+  """Returns the sender's email address from the CSV file."""
+  with open('file.csv', 'r') as maillistcsv:
+    emaillist = csv.reader(maillistcsv)
+    next(emaillist)
+    for email in emaillist:
+      email = email[1]
+      return wmail
+
+def getccto():
+  """Returns the CC email address from the CSV file."""
+  with open('file.csv', 'r') as maillistcsv:
+    emaillist = csv.reader(maillistcsv)
+    next(emaillist)
+    for email in emaillist:
+      email = email[1]
+      return wmail
 
 olApp = win32.Dispatch('Outlook.Application')
 # Create an Outlook application object
@@ -43,10 +43,10 @@ This is my email Body
 '''
 # Set the email's body
 
-mailItem.To = getuser()
+mailItem.To = getsendto()
 # Set the email's recipient to the user's name from the CSV file
 
-mailItem.CC = getmanager()
+mailItem.CC = getccto()
 # Set the email's CC recipient to the user's manager's name from the CSV file
 
 mailItem.Sensitivity  = 2
