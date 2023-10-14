@@ -1,6 +1,6 @@
 **README**
 
-**Title:** Outlook Email Sender
+**Title:** Outlook Email Automation
 
 **Description:** This is a Python script that can be used to send emails from Outlook. It uses the `win32com.client` library to interact with Outlook and the `csv` library to read data from a CSV file.
 
@@ -8,14 +8,14 @@
 
 1. Clone the repository to your local machine.
 2. Install the required Python libraries: `win32com.client` and `csv`.
-3. Open the `nusa.csv` file and edit it to include your name and manager's name.
+3. Open the `file.csv` file and edit it to include your recipient's email.
 4. Run the script from the command line:
 
 ```
-python outlook_email_sender.py
+python Outlook.py
 ```
 
-This will send an email to you with your manager in the CC field. The email's subject will be "This is my Subject" and the body will be "Hello, This is my email Body."
+This will send an email automatically. You can chose to display, save or send the email directly. The email's subject will be "This is my Subject" and the body will be "Hello, This is my email Body."
 
 **Optional:**
 
