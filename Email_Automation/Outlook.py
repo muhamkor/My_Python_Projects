@@ -9,8 +9,8 @@ def getsendto():
     emaillist = csv.reader(maillistcsv)
     next(emaillist)
     for email in emaillist:
-      email = email[1]
-      return wmail
+      email = email[0]
+      return email
 
 def getccto():
   """Returns the CC email address from the CSV file."""
@@ -19,7 +19,7 @@ def getccto():
     next(emaillist)
     for email in emaillist:
       email = email[1]
-      return wmail
+      return email
 
 outlookapp = win32.Dispatch('Outlook.Application')
 # Create an Outlook application object
@@ -46,7 +46,7 @@ This is my email Body
 mailItem.To = getsendto()
 # Set the email's recipient to the user's name from the CSV file
 
-mailItem.CC = getccto()
+#mailItem.CC = getccto()
 # Set the email's CC recipient to the user's manager's name from the CSV file
 
 mailItem.Sensitivity  = 2
@@ -55,7 +55,7 @@ mailItem.Sensitivity  = 2
 # optional (account you want to use to send the email)
 # mailItem._oleobj_.Invoke(*(64209, 0, 8, 0, outlookNS.Accounts.Item('<email@gmail.com')))
 
-#mailItem.Display()
+mailItem.Display()
 # Display the email before sending it
 
 # mailItem.Save()
