@@ -21,13 +21,13 @@ def getccto():
       email = email[1]
       return wmail
 
-olApp = win32.Dispatch('Outlook.Application')
+outlookapp = win32.Dispatch('Outlook.Application')
 # Create an Outlook application object
 
-olNS = olApp.GetNameSpace('MAPI')
+outlookNS = outlookapp.GetNameSpace('MAPI')
 # Get the user's namespace
 
-mailItem = olApp.CreateItem(0)
+mailItem = outlookapp.CreateItem(0)
 # Construct an email item object
 
 mailItem.Subject = 'This is my Subject'
@@ -53,7 +53,7 @@ mailItem.Sensitivity  = 2
 # Set the email's sensitivity to confidential
 
 # optional (account you want to use to send the email)
-# mailItem._oleobj_.Invoke(*(64209, 0, 8, 0, olNS.Accounts.Item('<email@gmail.com')))
+# mailItem._oleobj_.Invoke(*(64209, 0, 8, 0, outlookNS.Accounts.Item('<email@gmail.com')))
 
 #mailItem.Display()
 # Display the email before sending it
