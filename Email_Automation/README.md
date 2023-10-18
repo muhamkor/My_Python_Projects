@@ -6,10 +6,11 @@
 
 **Usage:**
 
-1. Clone the repository to your local machine.
-2. Install the required Python libraries: `win32com.client` and `csv`.
-3. Open the `file.csv` file and edit it to include your recipient's email.
-4. Run the script from the command line:
+1. Make sure you have Outlook installed on your computer
+2. Clone the repository to your local machine.
+3. Install the required Python libraries: `win32com.client` and `csv`.
+4. Open the `file.csv` file and edit it to include your recipient's email.
+5. Run the script from the command line:
 
 ```
 python Outlook.py
