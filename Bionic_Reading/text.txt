@@ -1,0 +1,1 @@
+This app is created tp help with bionic reading, it will transform text fron regular font to a bionic type font to make reading quick and easy for people with ADHD
