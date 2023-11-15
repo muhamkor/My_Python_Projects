@@ -56,6 +56,11 @@ The output file, `output.txt`, will contain the following text:
 **I**t **cont**ains **sent**ences **o**f **vary**ing **leng**ths.
 **So**me **wo**rds **a**re **sh**ort, **wh**ile **oth**ers **a**re **lo**ng.
 ```
+## Then a copy and paste to any makrdown processor and result will be as follows:
+
+**Th**is **i**s **a**n **exam**ple **te**xt **fi**le.
+**I**t **cont**ains **sent**ences **o**f **vary**ing **leng**ths.
+**So**me **wo**rds **a**re **sh**ort, **wh**ile **oth**ers **a**re **lo**ng.
 
 ## License
 
